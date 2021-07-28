@@ -5,8 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Roseweir | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c4ca68b1d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Michael Roseweir</h1>
+    <header>
+        <a href="#page1" id="menuBtn" class="upArrow"><i class="far fa-arrow-alt-circle-up"></i></a>
+        <a href="#page2" id="menuBtn">About</a>
+        <a href="#page3" id="menuBtn">Projects</a>
+        <a href="#page4" id="menuBtn">Technologies</a>
+        <a href="#page5" id="menuBtn">Contact</a>
+        <a href="#page1" id="menuBtn" class="upArrow"><i class="far fa-arrow-alt-circle-up"></i></a>
+    </header>
+
+    <div id="page1">
+        <h1 id="mainName">Michael Roseweir</h1>
+        <!-- <h4 id="scroll">S<br>C<br>R<br>O<br>L<br>L</h4> -->
+        <h4 id="scroll">    SCROLL    <i id="arrow" class="fas fa-angle-double-down"></i></h4>
+    </div>
+
+    <div id="page2">
+        <div id="bioContainer">
+            <img src="./images/Profile.jpeg" alt="uh oh, photo didnt load" srcset="" id="pfp">
+            <p id="bio">Michael was born in Durban, South Africa on November 3rd, 1995 to Melanie and Wayne Roseweir. Throughout the first years of his life Michael lived in several cities throughout South Africa. At the end of 1999 the Roseweir family jumped on a plane and moved from Johannesburg, South Africa to San Diego, California. Michael graduated in 2013 from High Tech High North County in San Marcos, California. Shortly after graduation Michael moved to Santa Barbara where he studied Professional Photography with a focus primarily on Scientific and Technical Imaging. Once school had ended, Michael relocated from Southern California to Dallas, TX where he currently resides with his family.</p>
+
+        </div>
+    </div>
+    <div id="page3">
+        <div id="missionContainer">
+            <iframe id="missionVid" src="https://player.vimeo.com/video/579983231" width="640" height="400" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <p id="missionTitle">Mission Builder</p>
+            <p id="missionBio">The Mission Builder is a interactive web application utilizing the SpaceX public API. Allowing users to select all necessary requirements to build a simulated mission. Built using JavaScript, HTML, CSS, Express, Axios, and the SpaceX API.</p>
+        </div>
+    </div>
+    <div id="page4"></div>
+    <div id="page5">
+        <h4 id="contactHeader">contact me</h4>
+        <div class="container">
+            <form action="action_page.php">
+          
+              <input type="text" id="fname" name="firstname" placeholder="first name">
+          
+              <input type="text" id="lname" name="lastname" placeholder="last name">
+
+              <input type="text" id="lname" name="lastname" placeholder="email">
+
+              <label for="subject"></label>
+              <textarea id="subject" name="subject" placeholder="message" style="height:200px"></textarea>
+          
+              <input type="submit" value="submit">
+          
+            </form>
+          </div>
+
+
+    </div>
 </body>
 </html>

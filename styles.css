@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#page1 {
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(25,100,126,1) 0%, rgba(7,74,97,1) 100%);
+}
+
+#page2 {
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(53,128,154,1) 0%, rgba(25,100,126,1) 100%);
+}
+
+#page3 {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(53,128,154,1) 0%, rgba(81,153,179,1) 100%);
+    
+}
+
+#page4 {
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(110,174,196,1) 0%, rgba(81,153,179,1) 100%);
+    
+}
+
+#page5 {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(110,174,196,1) 0%, rgba(197,223,232,1) 100%);
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.829);
+    height: 50px;
+    z-index: 999;
+}
+
+#menuBtn {
+    display: inline-flex;
+    color: rgb(212, 212, 212);
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#menuBtn:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid white;
+}
+
+.upArrow {
+    font-size: 18pt;
+}
+
+#mainName {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid rgb(216, 216, 216);
+    color: rgb(216, 216, 216);
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 54pt;
+}
+
+#scroll {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin: 25px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    font-weight: 400;
+    color: rgb(216, 216, 216);
+    width: 90px;
+}
+
+#arrow {
+    font-size: 10pt;
+}
+
+#bioContainer {
+    text-align: center;
+    width: 95vw;
+    padding-top: 20vh;
+    align-items: middle;
+    vertical-align: middle;
+}
+
+#pfp {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    size: 50px;
+    vertical-align: middle;
+}
+
+#bio {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 25px;
+    color: rgb(212, 212, 212);
+    width: 400px;
+    height: fit-content;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#missionContainer {
+    display: block;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+#missionVid {
+    display: inline-block;
+    box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.418);
+    /* border: 2px solid white; */
+    /* border-radius: 5px; */
+}
+
+#missionTitle{
+    color: rgb(211, 211, 211);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 34pt;
+    text-decoration: 1px underline rgb(211, 211, 211);
+    padding-top: 10px;
+}
+
+#missionBio {
+    display: inline-block;
+    color: rgb(212, 212, 212);
+    font-family: 'Montserrat', sans-serif;
+    width: 450px;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#contactHeader {
+    text-align: center;
+    padding-top: 100px;
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 48pt;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    display: flex;
+    align-content: middle;
+    text-align: center;
+    width: 40%;
+    padding: 12px; 
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: auto; 
+    margin-top: 16px; 
+    margin-bottom: 16px; 
+    background-color: transparent;
+    resize: vertical;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+
+input[type=submit] {
+    display: flex;
+    background-color: transparent;
+    color: black;
+    padding: 12px 20px;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: #ffffff;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
