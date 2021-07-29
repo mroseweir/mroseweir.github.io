@@ -78,10 +78,10 @@ header {
     color: rgb(216, 216, 216);
     font-family: 'Nothing You Could Do', cursive;
     font-size: 54pt;
-    transition: all .5s;
-    background: linear-gradient(45deg, rgb(216, 216, 216) 40%, transparent 50%);
+    background: linear-gradient(90deg, rgb(216, 216, 216) 50%, transparent 50%);
     background-size: 300% 100%;
-    background-position:right bottom;
+    background-position: right bottom;
+    transition: ease-out .5s;
 }
 
 #mainBtn {
@@ -91,8 +91,7 @@ header {
 #mainName:hover {
     color: rgb(7,74,97);
     background-position: left bottom;
-    transition: all .1s;
-    transition: ease-out .1s;
+    transition: ease-in .5s;
 }
 
 #scroll {
@@ -162,10 +161,7 @@ header {
 
 #missionVid {
     display: inline-block;
-    /* padding-top: 50px; */
     box-shadow: 8px 5px 5px rgba(0, 0, 0, 0.418);
-    /* border: 2px solid white; */
-    /* border-radius: 5px; */
 }
 
 #missionTitle{
