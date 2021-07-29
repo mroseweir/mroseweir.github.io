@@ -36,7 +36,7 @@ header {
     width: 100vw;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.829);
+    background-color: rgba(0, 0, 0, 0.658);
     height: 50px;
     z-index: 999;
 }
@@ -60,20 +60,19 @@ header {
     border-top: 1px solid white;
 }
 
-.upArrow {
-    font-size: 18pt;
+#nameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 #mainName {
-    position: relative;
-    top: 47%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    width: 50%;
+    margin: 0 auto;
+    width: 700px;
+    height: 100px;
     border-radius: 5px;
     text-align: center;
-    margin: 0 auto;
     border: 1px solid rgb(216, 216, 216);
     color: rgb(216, 216, 216);
     font-family: 'Nothing You Could Do', cursive;
@@ -81,7 +80,7 @@ header {
     background: linear-gradient(90deg, rgb(216, 216, 216) 50%, transparent 50%);
     background-size: 300% 100%;
     background-position: right bottom;
-    transition: ease-out .5s;
+    transition: ease-out .3s;
 }
 
 #mainBtn {
@@ -91,7 +90,7 @@ header {
 #mainName:hover {
     color: rgb(7,74,97);
     background-position: left bottom;
-    transition: ease-in .5s;
+    transition: ease-in .3s;
 }
 
 #scroll {
@@ -124,7 +123,7 @@ header {
 #pfp {
     display: inline-block;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 5px;
     size: 50px;
     vertical-align: middle;
@@ -134,23 +133,31 @@ header {
     display: inline-block;
     vertical-align: middle;
     margin: 25px;
-    color: rgb(212, 212, 212);
+    color: black;
     width: 425px;
     height: fit-content;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 #github {
     font-size: 50px;
-    padding-right: 50px;
-    color: rgb(212, 212, 212);
+    margin-right: 50px;
+    color: rgb(0, 0, 0);
+}
+
+#github:hover{
+    color: white;
 }
 
 #linkedin {
     font-size: 50px;
     padding-top: 15px;
-    color: rgb(212, 212, 212);
+    color: rgb(0, 0, 0);
+}
+
+#linkedin:hover {
+    color: white;
 }
 
 #missionContainer {
@@ -165,17 +172,17 @@ header {
 }
 
 #missionTitle{
-    color: rgb(211, 211, 211);
+    color: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 34pt;
-    text-decoration: 1px underline rgb(211, 211, 211);
+    text-decoration: none;
     padding-top: 10px;
 }
 
 #missionBio {
     display: inline-block;
-    color: rgb(212, 212, 212);
+    color: rgb(0, 0, 0);
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     width: 500px;
@@ -190,6 +197,49 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size: 48pt;
+}
+
+#techContainer {
+    display: block;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+#techHeader {
+    text-align: center;
+    padding: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 34pt;
+}
+
+#p4Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#iconContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80vw;
+    margin: auto;    
+}
+
+.icon {
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.icon:hover{
+    color: white;
 }
 
 input[type=text], select, textarea {
@@ -224,13 +274,14 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #ffffff;
-  transition: ease-in .5s;
-  transition: ease-out .5s;
+    background-color: #ffffff;
+    transition: ease-in .5s;
+    transition: ease-out .5s;
 }
 
-.container {
-  border-radius: 5px;
-  background-color: transparent;
-  padding: 20px;
+.formContainer {
+    vertical-align: auto;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
 }

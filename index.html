@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Michael Roseweir | Portfolio</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3c4ca68b1d.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header>
@@ -22,7 +24,9 @@
     </header>
 
     <div id="page1">
-        <a href="#page2" id="mainBtn"><h1 id="mainName">Michael Roseweir</h1></a>
+        <div id="nameContainer">
+            <a href="#page2" id="mainBtn"><h1 id="mainName">Michael Roseweir</h1></a>
+        </div>
     </div>
 
     <div id="page2">
@@ -42,27 +46,40 @@
             <p id="missionBio">The Mission Builder is a interactive web application utilizing the SpaceX public API. Allowing users to select all necessary requirements to build a simulated mission. Built using JavaScript, HTML, CSS, Express, Axios, and the SpaceX API.</p>
         </div>
     </div>
-    <div id="page4"></div>
+    <div id="page4">
+        <div id="p4Container">
+            <div id="techContainer"><h4 id=techHeader>Technologies</h4>
+                <div id="iconContainer">
+                    <div class="icon"><img src="./images/javascript.png" alt="JavaScript"><br>Javascript</div>
+                    <div class="icon"><img src="./images/html.png" alt="HTML"><br>HTML5</div>
+                    <div class="icon"><img src="./images/css.png" alt="CSS"><br>CSS3</div>
+                    <div class="icon"><img src="./images/postgresql.png" alt="postgresql"><br>PostGreSQL</div>
+                    <div class="icon"><img src="./images/node-js.png" alt="node.js"><br>Node.js</div>
+                    <div class="icon"><img src="./images/git.png" alt="Git"><br>Git</div>
+                    <div class="icon"><img src="./images/react.png" alt="react.js"><br>React.js</div>
+                    <div class="icon"><img src="./images/express.png" alt="express.js"><br>Express.js</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="page5">
         <h4 id="contactHeader">contact me</h4>
-        <div class="container">
+        <div class="formContainer">
             <form action="action_page.php">
-          
-              <input type="text" id="fname" name="firstname" placeholder="first name">
-          
-              <input type="text" id="lname" name="lastname" placeholder="last name">
+        
+            <input type="text" id="fname" name="firstname" placeholder="first name">
+        
+            <input type="text" id="lname" name="lastname" placeholder="last name">
 
-              <input type="text" id="lname" name="lastname" placeholder="email">
+            <input type="text" id="lname" name="lastname" placeholder="email">
 
-              <label for="subject"></label>
-              <textarea id="subject" name="subject" placeholder="message" style="height:200px"></textarea>
-          
-              <input type="submit" value="submit">
-          
+            <label for="subject"></label>
+            <textarea id="subject" name="subject" placeholder="message" style="height:200px"></textarea>
+        
+            <input type="submit" value="submit">
+        
             </form>
-          </div>
-
-
+        </div>
     </div>
 </body>
 </html>
