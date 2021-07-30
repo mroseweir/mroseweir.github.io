@@ -129,7 +129,7 @@
 #pfp {
     display: inline-block;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid #fff;
     border-radius: 5px;
     size: 50px;
     vertical-align: middle;
@@ -139,7 +139,8 @@
     display: inline-block;
     vertical-align: middle;
     margin: 25px;
-    color: black;
+    color: #fff;
+    line-height: 24px;
     width: 425px;
     height: fit-content;
     font-family: 'Montserrat', sans-serif;
@@ -194,6 +195,7 @@
     width: 500px;
     text-align: center;
     padding-top: 25px;
+    line-height: 24px;
 }
 
 #contactHeader {
