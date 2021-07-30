@@ -5,32 +5,32 @@
     scroll-behavior: smooth;
 }
 
-#page1 {
+#p1 {
     height: 100vh;
     background: linear-gradient(0deg, rgba(25,100,126,1) 0%, rgba(7,74,97,1) 100%);
 }
 
-#page2 {
+#p2 {
     height: 100vh;
     background: linear-gradient(0deg, rgba(53,128,154,1) 0%, rgba(25,100,126,1) 100%);
 }
 
-#page3 {
+#p3 {
     height: 100vh;
     background: linear-gradient(180deg, rgba(53,128,154,1) 0%, rgba(81,153,179,1) 100%);   
 }
 
-#page4 {
+#p4 {
     height: 100vh;
     background: linear-gradient(0deg, rgba(110,174,196,1) 0%, rgba(81,153,179,1) 100%);
 }
 
-#page5 {
+#p5 {
     height: 100vh;
     background: linear-gradient(180deg, rgba(110,174,196,1) 0%, rgba(197,223,232,1) 100%);
 }
 
-header {
+.menu {
     display: flex;
     position: fixed;
     width: 100vw;
