@@ -28,7 +28,7 @@
 #p5 {
     height: 100vh;
     background: linear-gradient(180deg, rgba(110,174,196,1) 0%, rgba(197,223,232,1) 100%);
-}
+} 
 
 .menu {
     display: flex;
@@ -242,7 +242,7 @@
     color: white;
 }
 
-input[type=text], select, textarea {
+input[type=text],[type=email], select, textarea {
     display: flex;
     align-content: middle;
     text-align: center;
@@ -261,7 +261,7 @@ input[type=text], select, textarea {
     color: black;
 }
 
-input[type=submit] {
+button[type=submit] {
     display: flex;
     background-color: transparent;
     color: black;
@@ -273,7 +273,7 @@ input[type=submit] {
     font-family: 'Montserrat', sans-serif;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
     background-color: #ffffff;
     transition: ease-in .5s;
     transition: ease-out .5s;
