@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3c4ca68b1d.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
 </head>
 <body>
     <header class='menu'>
@@ -31,9 +31,9 @@
     </div>
 
     <div id="p2">
-        <div id="bioContainer">
-            <img src="./images/Profile.jpeg" alt="uh oh, photo didnt load" srcset="" id="pfp">
-            <p id="bio">Michael was born in Durban, South Africa on November 3rd, 1995 to Melanie and Wayne Roseweir. Throughout the first years of his life Michael lived in several cities throughout South Africa. At the end of 1999 the Roseweir family jumped on a plane and moved from Johannesburg, South Africa to San Diego, California. Michael graduated in 2013 from High Tech High North County in San Marcos, California. Shortly after graduation Michael moved to Santa Barbara where he studied Professional Photography with a focus primarily on Scientific and Technical Imaging. Once school had ended, Michael relocated from Southern California to Dallas, TX where he currently resides with his family. <br>
+        <div  id="bioContainer">
+            <img data-aos="fade-right" data-aos-delay="250ms" src="./images/Profile.jpeg" alt="uh oh, photo didnt load" srcset="" id="pfp">
+            <p data-aos="fade-left" id="bio">Michael was born in Durban, South Africa on November 3rd, 1995 to Melanie and Wayne Roseweir. Throughout the first years of his life Michael lived in several cities throughout South Africa. At the end of 1999 the Roseweir family jumped on a plane and moved from Johannesburg, South Africa to San Diego, California. Michael graduated in 2013 from High Tech High North County in San Marcos, California. Shortly after graduation Michael moved to Santa Barbara where he studied Professional Photography with a focus primarily on Scientific and Technical Imaging. Once school had ended, Michael relocated from Southern California to Dallas, TX where he currently resides with his family. <br>
                 <a href="https://github.com/mroseweir" target="_blank"><i id="github" class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/michael-roseweir-6a93a8211/" target="_blank"><i id="linkedin" class="fab fa-linkedin"></i></a>
             </p>
@@ -77,5 +77,9 @@
             </form>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
 </body>
 </html>
